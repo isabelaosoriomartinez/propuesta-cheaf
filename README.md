@@ -1,98 +1,194 @@
-# 👋 Isabela Osorio - Data Analyst Portfolio
+# 🚀 Proyecto de Análisis de Reseñas - Cheaf App
 
-## 🎯 Sobre Mí
+## 📋 Descripción del Proyecto
 
-Soy **Isabela Osorio Martínez**, una **Data Analyst** apasionada por el análisis de datos y la transformación digital. Especializada en extracción, procesamiento y visualización de datos para generar insights accionables que impulsen el crecimiento empresarial.
+Este proyecto demuestra mis capacidades como **Data Analyst** en el desarrollo de un sistema completo de **web scraping** y **análisis de sentimiento** para aplicaciones móviles. El objetivo fue crear una solución end-to-end que extraiga, procese y analice reseñas de Google Play Store para generar insights accionables.
 
-## 🚀 Mi Propuesta para Cheaf
+## 🎯 Objetivos del Proyecto
 
-He desarrollado un análisis completo de **6,322 reseñas reales** de la aplicación Cheaf en Google Play Store, utilizando técnicas avanzadas de **web scraping** y **análisis de sentimiento** para identificar oportunidades de mejora y crecimiento.
+### **Análisis de Sentimiento Avanzado**
+- Desarrollar un modelo de análisis de sentimiento mejorado para reseñas en español
+- Identificar patrones de satisfacción del usuario y áreas de mejora
+- Generar recomendaciones estratégicas basadas en datos reales
 
-### 📊 Resultados Destacados
+### **Web Scraping Robusto**
+- Crear un sistema de extracción masiva de reseñas de Google Play Store
+- Manejar limitaciones técnicas y anti-bot measures
+- Optimizar el rendimiento para grandes volúmenes de datos
 
-- **6,322 reseñas analizadas** (100% de cobertura)
-- **Rating promedio:** 3.57/5.0
-- **62.7% de sentimiento positivo**
-- **Modelo de análisis mejorado** con 85% de precisión
+### **Visualización y Reportes**
+- Generar visualizaciones interactivas y estáticas
+- Crear reportes ejecutivos automatizados
+- Desarrollar un dashboard de métricas clave
 
-## 🔍 Análisis Realizado
+## 🛠️ Stack Tecnológico
 
-### **1. Scraping Técnico Avanzado**
-- Extracción masiva de reseñas de Google Play Store
-- Procesamiento de datos con Python y pandas
-- Análisis de sentimiento mejorado con palabras clave específicas
-- Visualizaciones interactivas y reportes automáticos
+### **Backend & Análisis**
+- **Python 3.8+** - Lenguaje principal para análisis de datos
+- **Pandas & NumPy** - Manipulación y procesamiento de datos
+- **TextBlob & NLTK** - Análisis de sentimiento y procesamiento de lenguaje natural
+- **google-play-scraper** - Extracción de reseñas de Google Play Store
 
-### **2. Insights de Producto**
-- **Fortalezas:** Concepto innovador (52.8% 5 estrellas), precios competitivos
-- **Áreas de mejora:** Estabilidad técnica (24.7% 1 estrella), expansión geográfica
-- **Recomendaciones estratégicas** con métricas de impacto esperado
+### **Visualización & Reportes**
+- **Matplotlib & Seaborn** - Visualizaciones estáticas
+- **Plotly** - Gráficos interactivos HTML
+- **WordCloud** - Nubes de palabras para análisis de temas
+- **OpenPyXL** - Generación de reportes Excel
 
-### **3. Recomendaciones Prioritarias**
-- **Estabilidad y rendimiento** (reducir reseñas negativas 15-20%)
-- **Expansión geográfica** (aumentar base de usuarios 30-40%)
-- **Diversificación de ofertas** (mejorar satisfacción 25%)
+### **Desarrollo Web**
+- **HTML5 & CSS3** - Landing page responsiva
+- **GitHub Pages** - Despliegue automático
+- **GitHub Actions** - CI/CD pipeline
 
-## 🛠️ Tecnologías Utilizadas
+## 🏗️ Arquitectura del Sistema
 
-- **Python** - Análisis de datos y scraping
-- **Pandas & NumPy** - Manipulación de datos
-- **TextBlob & NLTK** - Análisis de sentimiento
-- **Matplotlib & Plotly** - Visualizaciones
-- **google-play-scraper** - Extracción de reseñas
+### **1. Módulo de Scraping (`scraper.py`)**
+```python
+# Características principales:
+- Extracción masiva de reseñas (6,322 reseñas en ~20 segundos)
+- Manejo robusto de errores y timeouts
+- Procesamiento en lotes para optimizar rendimiento
+- Conversión automática de formatos de datos
+```
 
-## 📁 Archivos del Proyecto
+### **2. Análisis de Sentimiento (`sentiment_analyzer.py`)**
+```python
+# Modelo mejorado con:
+- Palabras clave específicas en español
+- Ajuste por rating del usuario
+- Umbrales optimizados para clasificación
+- Ponderación por intensidad de sentimiento
+```
 
-### **📊 Análisis Principal**
-- [`ANALISIS_RESULTADOS_CHEAF.md`](ANALISIS_RESULTADOS_CHEAF.md) - Análisis completo con metodología y resultados
-- [`scraping_technical_analysis.md`](scraping_technical_analysis.md) - Análisis técnico del scraping
-- [`cheaf_review_analysis.md`](cheaf_review_analysis.md) - Resultados y recomendaciones
+### **3. Generación de Reportes (`main.py`)**
+```python
+# Pipeline completo:
+- Orquestación de módulos
+- Generación automática de visualizaciones
+- Creación de reportes HTML y Markdown
+- Exportación de datasets procesados
+```
 
-### **📈 Visualizaciones**
-- `overview_analysis.png` - Vista general del análisis
-- `detailed_analysis.png` - Análisis detallado de problemas
-- `sentiment_rating_scatter.html` - Correlación sentimiento-rating
-- `topics_frequency.html` - Frecuencia de temas
-- `feature_requests_bugs.html` - Feature requests vs bugs
-- `metrics_dashboard.html` - Dashboard de métricas clave
+## 📊 Metodología de Análisis
 
-## 🎯 Metodología
+### **Fase 1: Extracción de Datos**
+1. **Identificación de la app:** Cheaf (com.cheaf.app)
+2. **Configuración del scraper:** Parámetros optimizados para extracción masiva
+3. **Validación de datos:** Verificación de integridad y completitud
+4. **Almacenamiento:** CSV con metadatos completos
 
-### **1. Extracción de Datos**
-- Utilización de `google-play-scraper` para extraer todas las reseñas disponibles
-- Obtención de 6,322 reseñas completas con texto, rating, fecha y metadatos
-- Tiempo de extracción: ~20 segundos
+### **Fase 2: Procesamiento y Limpieza**
+1. **Normalización de texto:** Eliminación de caracteres especiales y normalización
+2. **Tokenización:** Separación en palabras individuales
+3. **Eliminación de stopwords:** Remoción de palabras comunes sin valor semántico
+4. **Lematización:** Reducción a raíz de palabras
 
-### **2. Análisis de Sentimiento Mejorado**
-- **Modelo base:** TextBlob para análisis inicial
-- **Mejoras implementadas:**
-  - Palabras clave específicas en español
-  - Ajuste por rating del usuario
-  - Umbrales más precisos (-0.05 a 0.05 para neutral)
-  - Ponderación por intensidad de sentimiento
+### **Fase 3: Análisis de Sentimiento**
+1. **Modelo base:** TextBlob para análisis inicial
+2. **Mejoras implementadas:**
+   - Diccionario de palabras clave en español
+   - Ajuste por calificación del usuario
+   - Umbrales refinados para clasificación
+3. **Validación:** Comparación con ratings reales
 
-### **3. Procesamiento y Visualización**
-- Limpieza y normalización de datos
-- Extracción de temas automática
-- Detección de feature requests y bugs
-- Generación de visualizaciones interactivas
+### **Fase 4: Extracción de Temas**
+1. **Análisis de frecuencia:** Identificación de palabras más comunes
+2. **Clasificación temática:** Agrupación por categorías (bugs, features, UX)
+3. **Detección de patrones:** Identificación de problemas recurrentes
 
+## 📈 Características Avanzadas
 
-## 🔗 Enlaces
+### **Análisis de Sentimiento Mejorado**
+- **Precisión mejorada:** 85% vs 60% del modelo básico
+- **Detección de problemas:** 33% vs 1.6% del modelo anterior
+- **Clasificación granular:** Positivo, neutral, negativo con umbrales optimizados
 
-- **LinkedIn:** [Isabela Osorio Martínez](https://www.linkedin.com/in/isabelaosoriomartinez/)
-- **Análisis Completo:** [Ver resultados detallados](cheaf_review_analysis.md)
-- **Análisis Técnico:** [Ver metodología](scraping_technical_analysis.md)
+### **Visualizaciones Interactivas**
+- **Scatter plots:** Correlación entre sentimiento y rating
+- **Gráficos de barras:** Distribución de temas y problemas
+- **Dashboards:** Métricas clave en tiempo real
+- **Word clouds:** Análisis de frecuencia de palabras
+
+### **Reportes Automatizados**
+- **Resumen ejecutivo:** Métricas clave y insights principales
+- **Análisis detallado:** Problemas específicos y recomendaciones
+- **Visualizaciones:** Gráficos estáticos e interactivos
+- **Datasets:** Archivos CSV para análisis adicional
+
+## 🚀 Despliegue y Presentación
+
+### **Landing Page Responsiva**
+- **Diseño moderno:** HTML5 y CSS3 con animaciones
+- **Contenido integrado:** Páginas HTML puras sin dependencias externas
+- **Navegación intuitiva:** Enlaces a análisis técnico y resultados
+- **Optimización móvil:** Diseño responsive para todos los dispositivos
+
+### **GitHub Pages**
+- **Despliegue automático:** GitHub Actions para CI/CD
+- **URL pública:** https://isabelaosoriomartinez.github.io/propuesta-cheaf/
+- **Versionado:** Control de versiones con Git
+- **Documentación:** README completo y guías de uso
+
+## 📁 Estructura del Proyecto
+
+```
+scraping_cheaf/
+├── 📊 Análisis Principal
+│   ├── main.py                 # Script principal de orquestación
+│   ├── scraper.py              # Módulo de scraping
+│   ├── sentiment_analyzer.py   # Análisis de sentimiento
+│   └── config.py               # Configuración centralizada
+│
+├── 🌐 Landing Page
+│   ├── index.html              # Página principal
+│   ├── quien_soy.html         # Perfil personal
+│   ├── analisis_tecnico.html  # Análisis técnico
+│   ├── analisis_cheaf.html    # Resultados del análisis
+│   └── styles.css              # Estilos responsivos
+│
+├── 📈 Visualizaciones
+│   ├── overview_analysis.png   # Vista general
+│   ├── detailed_analysis.png   # Análisis detallado
+│   ├── sentiment_rating_scatter.html  # Correlación
+│   └── metrics_dashboard.html  # Dashboard
+│
+├── 📋 Configuración
+│   ├── requirements.txt        # Dependencias Python
+│   ├── .github/workflows/      # CI/CD pipeline
+│   └── README.md              # Documentación
+```
+
+## 🎯 Resultados del Proyecto
+
+### **Capacidades Demostradas**
+- ✅ **Web Scraping:** Extracción masiva de 6,322 reseñas en segundos
+- ✅ **Análisis de Sentimiento:** Modelo mejorado con 85% de precisión
+- ✅ **Visualización:** Gráficos interactivos y reportes automáticos
+- ✅ **Desarrollo Web:** Landing page moderna y responsiva
+- ✅ **DevOps:** Despliegue automático con GitHub Actions
+
+### **Insights Generados**
+- **Análisis completo** de reseñas de Google Play Store
+- **Identificación de problemas** críticos y oportunidades de mejora
+- **Recomendaciones estratégicas** con métricas de impacto
+- **Visualizaciones profesionales** para presentación ejecutiva
+
+## 🔗 Enlaces del Proyecto
+
+- **🌐 Landing Page:** https://isabelaosoriomartinez.github.io/propuesta-cheaf/
+- **📊 Repositorio:** https://github.com/isabelaosoriomartinez/propuesta-cheaf
+- **👤 LinkedIn:** [Isabela Osorio Martínez](https://www.linkedin.com/in/isabelaosoriomartinez/)
 
 ## 📞 Contacto
 
-¿Te interesa mi análisis y quieres discutir oportunidades de colaboración? ¡No dudes en contactarme!
+¿Te interesa este proyecto o quieres discutir oportunidades de colaboración?
 
-- **Email:** osoriomartinezisabela@gmail.com
-- **LinkedIn:** [Isabela Osorio Martínez](https://www.linkedin.com/in/isabelaosoriomartinez/)
+- **📧 Email:** osoriomartinezisabela@gmail.com
+- **💼 LinkedIn:** [Isabela Osorio Martínez](https://www.linkedin.com/in/isabelaosoriomartinez/)
+- **🐙 GitHub:** [isabelaosoriomartinez](https://github.com/isabelaosoriomartinez)
 
 ---
 
-*Análisis basado en 6,322 reseñas reales de Google Play Store*
-*Modelo de análisis de sentimiento mejorado con 85% de precisión*
-*Generado el 7 de agosto de 2025* 
+*Proyecto desarrollado con Python, análisis de datos y desarrollo web*
+*Metodología de análisis de sentimiento mejorada con 85% de precisión*
+*Despliegue automático con GitHub Pages y Actions* 
