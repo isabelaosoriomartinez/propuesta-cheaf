@@ -77,17 +77,6 @@ He desarrollado un análisis completo de **6,322 reseñas reales** de la aplicac
 - Detección de feature requests y bugs
 - Generación de visualizaciones interactivas
 
-## 📈 Métricas de Éxito
-
-### **Objetivos a 3 Meses**
-- Reducir reseñas de 1 estrella de 24.7% a <15%
-- Aumentar rating promedio de 3.57 a >4.0
-- Mejorar sentimiento positivo de 62.7% a >75%
-
-### **Objetivos a 6 Meses**
-- Expansión geográfica: 5 nuevas ciudades
-- Diversificación: 50% más restaurantes
-- Estabilidad: <2% de reseñas reportando bugs
 
 ## 🔗 Enlaces
 
@@ -99,7 +88,7 @@ He desarrollado un análisis completo de **6,322 reseñas reales** de la aplicac
 
 ¿Te interesa mi análisis y quieres discutir oportunidades de colaboración? ¡No dudes en contactarme!
 
-- **Email:** [Tu email aquí]
+- **Email:** osoriomartinezisabela@gmail.com
 - **LinkedIn:** [Isabela Osorio Martínez](https://www.linkedin.com/in/isabelaosoriomartinez/)
 
 ---
