@@ -153,6 +153,19 @@ body {
     transform: translateY(-1px);
 }
 
+.social-link.cv-download {
+    background: #28a745;
+    color: white;
+    border: 2px solid #28a745;
+}
+
+.social-link.cv-download:hover {
+    background: #218838;
+    border-color: #218838;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
 .profile-description {
     font-size: 1.1rem;
     color: #4a5568;
