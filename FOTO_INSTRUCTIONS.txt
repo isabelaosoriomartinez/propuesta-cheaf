@@ -1,0 +1,17 @@
+📸 INSTRUCCIONES PARA LA FOTO DE PERFIL
+
+Para completar la landing page, necesitas agregar tu foto de perfil:
+
+1. **Nombre del archivo:** Foto.jpg
+2. **Ubicación:** En la raíz del proyecto (mismo nivel que index.html)
+3. **Formato:** JPG
+4. **Tamaño recomendado:** 200x200 píxeles o mayor
+5. **Estilo:** Profesional, sonriendo, con fondo neutro
+
+La foto aparecerá como un círculo en la sección de presentación de la landing page.
+
+---
+💡 TIP: Si no tienes una foto profesional, puedes usar una foto de LinkedIn o crear una con herramientas como:
+- Canva
+- Remove.bg (para quitar fondos)
+- Foto de perfil de redes sociales profesionales 
